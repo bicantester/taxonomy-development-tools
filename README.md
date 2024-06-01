@@ -3,14 +3,17 @@
 # How to Test TDT
 
 1. **Build the Test Docker Image**  
-Clone the TDT test repository using the following command
+Get the TDT test Docker image:
+```
+docker pull ghcr.io/brain-bican/taxonomy-development-tools:tester
+```
+
+_Alternatively you can build the image from the source code:_
+
+_Clone the TDT test repository and build the pre-configured docker image using the following command_
 ```
 git clone https://github.com/bicantester/taxonomy-development-tools.git
 cd taxonomy-development-tools
-``` 
-
-Buils the pre-configured docker image using the following command
-```
 docker build --no-cache -t "ghcr.io/brain-bican/taxonomy-development-tools:tester" .
 ```
 
